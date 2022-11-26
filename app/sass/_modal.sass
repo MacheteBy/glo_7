@@ -1,0 +1,73 @@
+.overlay
+    position: fixed
+    display: none
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 3
+    background-color: rgba(0, 0, 0, 0.5)
+    .popup
+        position: fixed
+        left: 50%
+        top: 100px
+        width: 752px
+        transform: translateX(-50%)
+        &-close
+            position: absolute
+            font-size: 35px
+            color: #fff
+            right: -20px
+            top: -30px
+            font-weight: 300
+            cursor: pointer
+        &-title
+            display: block
+            width: 100%
+            min-height: 71px
+            margin: 0
+            background-color: $active-color
+            color: $text-color-light
+            text-transform: uppercase
+            font-size: 21px
+            text-align: center
+            font-weight: 500
+            text-align: center
+            line-height: 71px
+        &-form
+            background: url(/img/popup_bg.jpg) center no-repeat
+            background-size: cover
+            padding: 35px 88px 50px 88px
+            color: $text-color-light
+            &-header
+                padding: 0
+                font-size: 30px
+                font-weight: 30px
+                line-height: 27px
+                text-align: center
+                span
+                    font-size: 24px
+            &_lable
+                display: block
+                margin-top: 23px
+                font-size: 20px
+                font-weight: 300
+                line-height: 30px
+                text-align: center
+            &_input
+                width: 60%
+                height: 56px
+                margin-top: 17px
+                padding-left: 18px
+            &_button
+                width: 180px
+                height: 62px
+                font-size: 15px
+                line-height: 22px
+                font-weight: 500
+                margin-left: 15px
+            &_note
+                margin-top: 9px
+                font-size: 14px
+                font-weight: 300
+                line-height: 30px
+                text-align: center

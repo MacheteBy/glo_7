@@ -1,0 +1,48 @@
+.contacts
+    position: relative
+    &-block
+        display: inline-block
+        position: absolute
+        left: 12%
+        top: 6%
+        background-color: #fff
+        padding: 33px 39px 34px 60px
+        box-shadow: 0px 0px 15px 5px rgba(34, 60, 80, 0.25) inset
+        &__adress
+            &::before
+                display: block
+                position: absolute
+                left: 10%
+                top: 9%
+                width: 17px
+                height: 25px
+                content: ''
+                background: url(../img/icon_gps.png) center no-repeat
+        &__phone
+            &::before
+                display: block
+                position: absolute
+                left: 10%
+                top: 38%
+                width: 15px
+                height: 22px
+                content: ''
+                background: url(../img/icon_tel.png) center no-repeat
+        &__email
+            &::before
+                display: block
+                position: absolute
+                left: 10%
+                top: 76%
+                width: 20px
+                height: 14px
+                content: ''
+                background: url(../img/icon_email.png) center no-repeat
+        &__title
+            display: block
+            font-size: 18px
+            font-weight: 700
+            margin-bottom: 8px
+            margin-top: 8px
+        &__text
+            margin-bottom: 30px

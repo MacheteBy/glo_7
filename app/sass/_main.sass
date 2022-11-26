@@ -1,0 +1,55 @@
+.main
+    padding-top: 65px
+    padding-bottom: 60px
+    background: $text-color-dark url(../img/main-bg.jpg) center no-repeat
+    background-size: cover
+    color: $text-color-light
+
+    &_img
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            z-index: -1
+            width: 390px
+            height: 390px
+            left: 50%
+            margin-left: -175px
+            border: 1px solid lighten($text-color-dark, 40)
+            border-radius: 50%
+    &_text
+        &_title
+            margin-bottom: 20px
+            font-size: 41px
+            font-weight: 700
+        &_subtitle
+            margin-bottom: 27px
+            font-size: 28px
+            font-weight: 300
+        &_form
+            background-color: rgba(255, 255, 255, 0.2)
+            border-radius: 5px
+            padding: 30px 27px
+            max-width: 535px
+.form
+    &_title
+        margin-bottom: 20px
+        padding-right: 87px
+        font-size: 20px
+        font-weight: 300
+        line-height: 30px
+        &_uppercase
+            font-weight: 500
+            text-transform: uppercase
+    &_input
+        padding: 20px
+        border-radius: 4px
+        border: none
+        vertical-align: middle
+        min-width: 311px
+.container
+    position: relative
+    z-index: 1
+
+.menu
+    display: none

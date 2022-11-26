@@ -1,0 +1,141 @@
+@media(max-width: 989px)
+    .header
+        &_logo
+            background: url(../img/logo_mob.png) center no-repeat
+            width: 35px
+            height: 35px
+            padding-left: 30px
+        &_contacts
+            &_phone
+                &s
+                    flex-direction: column
+                font-size: 14px
+                margin-right: 0
+                &:first-child
+                    border-right: none
+            &_btn
+                display: inline-block
+                padding: 5px
+    .hidden-mobile
+        display: none
+    
+    .main
+        text-align: center
+        padding-top: 50px
+        &_text
+            width: 100%
+            &_title
+                font-size: 22px
+                color: $active-color
+            &_subtitle
+                font-size: 18px
+                margin-bottom: 40px
+            &_form
+                margin-right: auto
+                margin-left: auto
+                background-color: transparent
+    .form
+        padding: 10px
+        display: block
+        text-align: center
+        &_title
+            padding-right: 0
+            font-size: 15px
+            line-height: 1.4
+        &_input
+            min-width: 80%
+            margin-bottom: 13px
+    .numbers
+        &-block
+            display: block
+            width: 100%
+            margin-bottom: 24px
+    .features-blocks
+        flex-direction: column
+    .offer
+        display: flex
+        text-align: center
+        &-form
+            margin-left: auto
+            margin-right: auto
+        &-title
+            font-size: 20px
+            &__small
+                font-size: 16px
+
+    .menu
+        background-color: $active-color
+        position: fixed
+        width: 100vw
+        height: 100vh
+        z-index: 2
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: all 0.4s
+        left: -100vw
+        &_active
+            left: 0
+        ul
+            list-style: none
+            text-align: center
+            padding: 0
+        li
+            width: 100vw
+            a
+                color: $text-color-light
+                display: block
+                width: 100%
+                text-decoration: none
+                line-height: 3
+                font-weight: 100
+                letter-spacing: 4px
+                transition: all 0.2s
+                &:hover
+                    background-color: rgba(255,255,255,0.4)
+                    text-decoration: none
+        &-link
+            display: block
+            z-index: 9
+            width: 30px
+            height: 30px
+            background-color: $text-color-light
+            position: fixed
+            top: 18px
+            left: 2%
+            span, span:before, span:after
+                display: block
+                height: 4px
+                width: 30px
+                position: absolute
+                left: 40%
+                margin-left: -12px
+                top: 50%
+                margin-top: -2px
+                background-color: $text-color-dark
+            span:before
+                transition: all 0.2s
+                content: ''
+                margin-top: -11px
+            span:after
+                transition: all 0.2s
+                content: ''
+                margin-top: 7px
+            &_active
+                span
+                    background-color: transparent
+                    &::before
+                        transform: rotate(135deg)
+                        margin: 0
+                        left: 0
+                    &::after
+                        transform: rotate(-135deg)
+                        margin: 0
+                        left: 0
+
+
+
+    @media(max-width: 600px)
+        .header
+            &_logo
+                padding-left: 70px
